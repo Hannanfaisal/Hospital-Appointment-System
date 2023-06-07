@@ -1,0 +1,106 @@
+ 
+a{
+    color: white;
+}
+
+ .navbar{
+    height: 100px;
+ }
+ 
+ /* sidebar */
+
+.sidebar{
+    background-color:rgb(17, 17, 43);
+    width: 260px;
+    max-height: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: 1;
+
+    
+}
+
+.sidebar  a{
+  text-decoration: none;
+  color: white;
+  display: block;
+
+}
+
+
+
+.sidebar a{
+  padding: 6px 25px
+}
+
+.sidebar .active{
+    background-color: white;
+    color: rgb(17, 17, 43);
+    font-weight: 700;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+
+
+.sidebar hr{
+    color: white;
+}
+
+.sidebar a span{
+    margin-right: 4px;
+}
+
+
+
+/* content */
+
+.content{
+    margin-left: 250px;
+    width: 100%;
+
+}
+
+.content .row .card i{
+    opacity: 0.3;
+}
+
+.content .card{
+    background-color: rgb(39, 53, 103);
+}
+
+
+.content .card .card-footer{
+    background-color: rgb(13, 23, 70); 
+    color: white;
+}
+
+.content .card .card-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.content .card .card-footer:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+
+#add-doctor{
+    cursor: pointer;
+}
+
+@media(max-width: 991px){
+
+    .sidebar{
+        display: none; 
+        transition: 0.5s; 
+    }
+    .content{
+        margin-left: 0;
+    }
+
+}
+
+

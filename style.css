@@ -1,0 +1,349 @@
+
+/* navbar */
+.navbar{
+   font-family: Arial, Helvetica, sans-serif;
+   height: 100px;
+
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size: larger;
+}
+
+.navbar .nav-item a{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.navbar .nav-item a:hover{
+    color: rgb(13, 23, 70);
+    font-weight: bold;
+  
+    background: rgb(255, 255, 255);
+    border-radius: 13px;
+    font-size:16pt;
+    transition: 0.5s;
+
+}
+
+.navbar .nav-item .active{
+    color: white;
+}
+.navbar .navbar-nav .nav-item {
+    padding-right: 40px;
+}
+
+.navbar button a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar button a:hover {
+    color: rgb(17, 17, 43);
+}
+
+.navbar button:hover {
+    background-color: whitesmoke;
+}
+
+
+
+ 
+.navbar .navbar-collapse .dropdown .dropdown-toggle:hover{
+    color: rgb(17, 17, 43)
+}
+
+.navbar .navbar-collapse .dropdown .dropdown-toggle{
+    color: white
+}
+
+.navbar .nav-item  .active-link{
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+
+footer li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+footer ul li{
+    padding: 10px 5px;
+    line-height: 10px;
+}
+
+
+footer h4{
+    color: rgb(137,171,253); 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+footer .contact-list li{
+    word-break: break-all;
+     line-height: normal;
+}
+
+
+.login {
+    background: url('images/background.jpg') no-repeat;
+     width: 100%; 
+    
+    background-size: cover;
+
+
+} 
+
+.doctors .card{
+    color:  rgb(17, 17, 43);
+    border: 2px rgb(17, 17, 43) solid;
+    width: 22rem;
+} 
+
+
+.doctors .card img{
+    background-color:rgb(254, 249, 249)  ;
+    border: 2px rgb(17, 17, 43) solid;
+} 
+
+
+.services .card{
+    width: 22rem;
+}
+
+
+
+/* contact */
+
+.contact-img-container{
+    height: 300px;
+    width: 100%;
+   
+    
+}
+
+.contact-img{
+    background:url('images/team9.png') no-repeat;
+    background-size: 100%;
+    height: 100%;
+    padding: 100px;
+    object-fit: cover;
+ 
+}
+
+
+.contact-img a{
+    text-decoration: none;
+    color: rgb(61, 45, 45);
+    font-weight: 700;
+
+}
+
+.contact-img p{
+    font-weight: 500;
+}
+
+
+.contact .contact-map-img-container a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.login .login-button .btn{
+   background-color: rgb(17, 17, 43);
+   color: white;
+}
+
+
+
+.img2{
+
+   max-height: 560px;
+  
+    width: 100%;
+}
+
+.img2 .img{
+    object-fit:cover;
+    width: 100%;
+    height:100%
+}
+
+
+
+/* department categories such as surgery, ent, neurology etc */
+
+.department-category-img-container{
+    
+
+    background-color: #ece7e7;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+
+.department-category button a{
+    
+
+   text-decoration: none;
+   color: white;
+
+}
+
+
+
+/* services */
+
+.services .services-card i{
+    margin-bottom: 20px;
+    color: red;
+    background: rgba(255,77,28,0.15);
+    padding: 15px;
+    border-radius: 100%;
+
+}
+
+
+.services .services-card {
+    width: 25rem;
+    border: 3px solid rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 0 25px rgba(0, 0,0,0.07);
+    margin: 10px;
+
+}
+
+.services .services-card:hover{
+    cursor: pointer;
+    background-color: rgb(17, 17, 43);
+    transform: scale(0.9);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    
+
+}
+
+.services .services-card:hover i{
+    color: white;
+background-color: red;
+}
+
+.services .services-card:hover h3{
+    color: white;
+}
+
+
+.services .services-card a{
+    text-decoration: none;
+    color: rgb(13, 23, 70);
+}
+
+/* doctors */
+
+.doctors .card .card-footer{
+   
+   
+
+   background-color: rgb(13, 23, 70);
+    color: white;
+    
+}
+
+
+.doctors .card .card-footer:hover{
+   
+  
+    cursor: pointer;
+    transition: 0.4s;
+color: rgb(13, 23, 70);
+ background-color: rgb(255, 0, 0); 
+    
+}
+
+
+.doctors .card-footer a{
+text-decoration: none;
+color: white;
+}
+
+
+/* departments */
+
+.departments .departments-card a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.departments .departments-card a h3:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+.departments .departments-card{
+    width: 25rem;
+    border: 3px solid rgba(0, 0, 0, 0.07);
+  
+    box-shadow: 0 0 25px rgba(0, 0,0,0.07);
+    margin: 10px;
+    height: 190px;
+    
+}
+
+.departments .departments-card .card-img{
+   background-color: red;
+   width: 100%;
+   height: 100%;
+   border-bottom-right-radius: 40px;
+  
+
+}
+
+.departments .departments-card  .card-img img{
+   padding-top: 10px;
+   width: 150px;
+   height: 150px;
+
+ }
+
+ .departments .departments-card .card-img-container{
+    background-color: rgb(17, 17, 43); 
+    width: 100%;
+ }
+ 
+ .departments .departments-card .card-content-container{
+    background-color: red;
+    width: 110%;
+ }
+
+ .departments .departments-card .card-content-container .card-content{
+    border-top-left-radius:40px; 
+    color: white; 
+    width: 100%; 
+    height: 100%; 
+    padding-top: 40%;
+    padding-left: 12px; 
+    padding-right: 12px;
+    background-color: rgb(17, 17, 43);
+ }
+
+ .departments .departments-card .card-content-container .card-content h3 span{
+    font-size: medium;
+ }
+
+
+
