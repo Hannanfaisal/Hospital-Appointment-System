@@ -295,6 +295,18 @@ if (isset($_POST['updation'])) {
 
         <div class="row border  p-3 m-2 bg-light">
           <h4>Doctor's List</h4>
+          <div class="col-12 justify-content-end d-flex">
+            <div class="row align-items-center mb-2">
+              <div class="col-md-12 ">
+                <form method="POST" action="">
+                  
+                  <input type="text" id="inputSearch" name="search" class="form-control" placeholder="Search">
+                  <button class="btn btn-primary btn-sm" type="submit" name="go">Go</button>
+                
+                </form>
+              </div>
+            </div>
+          </div>
           <div class="col-12">
 
             <div class="table-responsive">
@@ -316,7 +328,15 @@ if (isset($_POST['updation'])) {
 
                   <?php
 
-                  $query = "SELECT * FROM doctors";
+                  if (isset($_POST['go'])) {
+                    $search = $_POST['search'];
+                    $query = "SELECT * FROM doctors WHERE name lIKE '%$search%' or specialization LIKE '$search%' or department LIKE '$search%'";
+                  } else {
+                    $query = "SELECT * FROM doctors";
+                  }
+
+
+
                   $res = mysqli_query($con, $query);
                   if (!$res) {
                     die("Error in the query");
